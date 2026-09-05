@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    color: #333
+}
+
+header {
+    background-color: #306313;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #306313;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 300px;
+}
+
+.card:first-of-type {
+    flex: 2 1 500px;
+}
+
+.card h2 {
+    background-color: #306313;
+    color: white;
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.card p {
+    padding: 0.8rem 1.2rem;
+    line-height: 1.4;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+.card img:nth-of-type(2){
+    float: left;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.card img:nth-of-type(1){
+    float: right;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.card ul {
+    padding: 1.5rem 2.5rem;
+}
+
+.card a {
+    color: #0000ee;
+}
+
+footer {
+    width: 100%;
+    background-color: #306313;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+
+}
