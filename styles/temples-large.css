@@ -1,0 +1,31 @@
+@media (min-width: 700px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .album {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+}
