@@ -3,7 +3,6 @@
     --secondary-color: #306313;
     --accent-color: #e41c1c;
     --text-color: #333333;
-    --light-bg: #f9f9f9;
     --white: #ffffff;
     --font-heading: 'Roboto Slab', serif;
     --font-body: 'Roboto', sans-serif;
@@ -51,7 +50,7 @@ header h1 {
 
 .data,
 .weather {
-    position: absolute;
+    position: relative;
     background-color: rgba(255, 255, 255, 0.30);
     border: 1px solid #ccc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
