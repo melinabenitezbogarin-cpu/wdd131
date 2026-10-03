@@ -1,0 +1,150 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b4b70;
+    color: white;
+    padding: 1rem 1.5rem;
+    position: relative;
+
+}
+
+#course-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#menu {
+    position: static;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+.menu.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+.menu a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+
+#temple-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.temple-card {
+    background-color: #ededed;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.temple-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.temple-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: #222;
+    width: 100%;
+}
+
+.temple-card .label {
+    color: #2b4b70;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 1rem;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b4b70;
+    color: white;
+    text-align: center;
+    gap: 0.2rem;
+}
+
+footer p {
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
