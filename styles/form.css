@@ -1,7 +1,6 @@
 :root {
     --primary-color: #2b4b70;
     --secondary-color: #306313;
-    --accent-color: #e41c1c;
     --text-color: #333333;
     --white: #ffffff;
     --light-bg: #dcd6de;
@@ -51,13 +50,12 @@ form {
     padding: 1.5rem;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Ancho controlado para que se vea simétrico como en la imagen */
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-/* Ajuste general de etiquetas */
 label {
     display: block;
     color: var(--text-color);
@@ -65,7 +63,7 @@ label {
     font-size: 0.95rem;
 }
 
-/* Campos de entrada: select, date, text y textarea */
+
 select,
 input[type="date"],
 input[type="text"],
@@ -94,7 +92,8 @@ legend {
     margin-bottom: 0.5rem;
 }
 
-legend em, legend .subtitle {
+legend em,
+legend .subtitle {
     font-weight: normal;
     font-style: italic;
     font-size: 0.85rem;
