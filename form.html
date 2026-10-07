@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 - Form,Product Review</title>
-    <meta name="description"
-        content="WDD 131 - This is a Form of a product review with different spaces to put users opinions.">
+    <title>WDD131 - Form Product Review</title>
+    <meta name="description" content="WDD 131 - This is a Form of a product review with spaces to put users opinions.">
     <meta name="author" content="Melina Benitez Bogarin">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +29,7 @@
 
             <label for="product-select">Product Name</label>
             <select name="product" id="product-select" required>
-                <option value="">Choose a Product ... </option>
+                <option value="" disabled selected>Choose a Product ... </option>
             </select>
 
             <fieldset>
@@ -38,29 +37,29 @@
                 <div class="rating-group">
                     <label for="rating1">
                         <span class="stars">&star;</span>
-                        <input type="radio" id="rating1" name="rafting" value="1" required>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
                     </label>
                     <label for="rating2">
                         <span class="stars">&star;&star;</span>
-                        <input type="radio" id="rating2" name="rafting" value="2" required>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
                     </label>
                     <label for="rating3">
                         <span class="stars">&star;&star;&star;</span>
-                        <input type="radio" id="rating3" name="rafting" value="3" required>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
                     </label>
                     <label for="rating4">
                         <span class="stars">&star;&star;&star;&star;</span>
-                        <input type="radio" id="rating4" name="rafting" value="4" required>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
                     </label>
                     <label for="rating5">
                         <span class="stars">&star;&star;&star;&star;&star;</span>
-                        <input type="radio" id="rating5" name="rafting" value="5" required>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
                     </label>
                 </div>
             </fieldset>
 
             <label for="install-date">Date of Installation</label>
-            <input type="date" id="intall-date" name="installDate" required>
+            <label><input type="date" id="install-date" name="installDate" required></label>
 
             <fieldset class="features-fieldset">
                 <legend>Which features did you find useful in the product?<br><span class="subtitle">(Check all that
@@ -75,18 +74,18 @@
                     <input type="checkbox" id="feature-performance" name="features" value="performance">
                     Performance</label>
                 <label for="feature-design">
-                    <input type="checkbox" id="feature-design" name="features" value="desing">
+                    <input type="checkbox" id="feature-design" name="features" value="design">
                     Design</label>
             </fieldset>
 
             <label>Written Review <span class="optional">(Optional)</span></label>
-            <textarea name="writtenReview" id="written-review" rows="4"></textarea>
+            <label><textarea name="writtenReview" id="written-review" rows="4"></textarea></label>
 
 
             <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
-            <input type="text" id="user-name" name="userName">
+            <label><input type="text" id="user-name" name="userName"></label>
 
-            <input type="submit" value="Post Review">
+            <label><input type="submit" value="Post Review"></label>
 
         </form>
     </main>
@@ -96,3 +95,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
+</html>
