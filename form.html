@@ -16,6 +16,7 @@
 
 
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
 
     <script src="scripts/form.js" defer></script>
 </head>
@@ -29,7 +30,7 @@
 
             <label for="product-select">Product Name</label>
             <select name="product" id="product-select" required>
-                <option value="" disabled selected>Choose a Product ... </option>
+                <option value="" disabled selected>Select a Product ...</option>
             </select>
 
             <fieldset>
@@ -78,8 +79,8 @@
                     Design</label>
             </fieldset>
 
-            <label>Written Review <span class="optional">(Optional)</span></label>
-            <label><textarea name="writtenReview" id="written-review" rows="4"></textarea></label>
+            <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea name="writtenReview" id="written-review" rows="4"></textarea>
 
 
             <label for="user-name">Your Name <span class="optional">(Optional)</span></label>

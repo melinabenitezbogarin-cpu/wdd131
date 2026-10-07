@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2b4b70;
-    --secondary-color: #306313;
+    --secondary-color: #93d46d;
     --text-color: #333333;
     --white: #ffffff;
     --light-bg: #dcd6de;
@@ -69,10 +69,10 @@ input[type="date"],
 input[type="text"],
 textarea {
     background-color: var(--white);
-    border: 1px solid #999;
+    border: 1px solid var(--light-bg);
     border-radius: 4px;
     padding: 0.75rem;
-    color: #333;
+    color: var(--text-color);
     width: 100%;
     font-size: 1rem;
     font-family: var(--font-body);
@@ -137,9 +137,8 @@ input[type="radio"] {
 }
 
 input[type="submit"] {
-    background-color: #ebebeb;
-    color: #000;
-    border: 1px solid #767676;
+    background-color: var(--white);
+    color: var(--text-color);
     border-radius: 4px;
     padding: 0.8rem;
     font-size: 1.2rem;
@@ -150,7 +149,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #d5d5d5;
+    background-color: var(--secondary-color);
 }
 
 .optional {

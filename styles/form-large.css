@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 2.5rem 1rem;
+    }
+
+    form {
+        max-width: 750px;
+        padding: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .rating-group {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .rating-group span {
+        font-size: 1.3rem;
+    }
+
+    .features-fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 1rem;
+    }
+
+    .features-fieldset legend {
+        grid-column: 1 / -1;
+    }
+
+    input[type="submit"] {
+        max-width: 250px;
+        align-self: center;
+    }
+}
