@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #2b4b70;
+    --secondary-color: #306313;
+    --accent-color: #e41c1c;
+    --text-color: #333333;
+    --white: #ffffff;
+    --light-bg: #dcd6de;
+    --font-heading: 'Roboto Slab', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--white);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.2rem;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+form {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Ancho controlado para que se vea simétrico como en la imagen */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Ajuste general de etiquetas */
+label {
+    display: block;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Campos de entrada: select, date, text y textarea */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    background-color: var(--white);
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #333;
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    margin-top: 0.3rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+legend em, legend .subtitle {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.rating-group label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+    padding-top: 0;
+}
+
+.rating-group span {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.features-fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: normal;
+    padding-top: 0.4rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #ebebeb;
+    color: #000;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d5d5d5;
+}
+
+.optional {
+    font-weight: normal;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}

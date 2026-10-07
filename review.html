@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Confirmation page for submitted product review.">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <section class="review-confirmation">
+            <h2>Thank You for Your Review!</h2>
+            <p>Your feedback has been successfully submitted and recorded.</p>
+
+            <div class="counter-card">
+                <p>Total reviews completed in this browser:</p>
+                <span id="review-counter">0</span>
+            </div>
+
+            <a href="form.html" class="back-link">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌎 Melina Benitez Bogarin 🌎 Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
