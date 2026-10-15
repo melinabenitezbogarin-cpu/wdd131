@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Our Mind While We Sleep</title>
+    <meta name="description" content="You can fill a form to join in the club in this page">
+    <meta name="author" content="Melina Benitez Bogarin">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicondream.ico">
+
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <script src="scripts/join.js" defer></script>
+
+    <meta property="og:title" content="Join - Our Mind While We Sleep">
+    <meta property="og:description" content="You can fill a form to join in the club in this page">
+    <meta property="og:image"
+        content="https://melinabenitezbogarin-cpu.github.io/wdd231/final/images/home-beproductive.jpg">
+    <meta property="og:url" content="https://melinabenitezbogarin-cpu.github.io/wdd231/final/mentor.html">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/favicondream.ico" alt="Brain">
+                <div class="title">
+                    <h2>Our Mind While We Sleep</h2>
+                </div>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="know.html">Know</a></li>
+                    <li><a href="find.html">Find</a></li>
+                    <li><a href="join.html" class="btn-mentor active">Join</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button id="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Join us</h1>
+        <form action="joinform.html" method="join" class="join-form">
+            <h2>Join today to a club!</h2>
+
+            <div class="form-group">
+                <label for="flname">First and Last Name *</label>
+                <input type="text" id="flname" name="flname" required autocomplete="given-name"
+                    title="Enter your first and last name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john89@gmail.com"
+                    title="Enter a valid email address">
+            </div>
+
+            <div class="form-group">
+                <label for="option-select">Club Area</label>
+                <select name="option" id="option-select" required>
+                    <option value="" disabled selected>Select an option ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Date to Begin</label>
+                <input type="date" id="start-date" name="startDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="written-review">Add specific information you want to focus on... <span
+                        class="optional">(Optional)</span></label>
+                <textarea name="writtenReview" id="written-review" rows="4"></textarea>
+            </div>
+            <input type="submit" value="Join" class="submit-btn">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Our Mind while we sleep</h3>
+                <p>Melina Benitez Bogarin</p>
+                <p>mindsanddreams@gmail.com</p>
+                <p>WDD 131 Project</p>
+                <p>&copy;<span id="currentyear"></span> Our mind while we sleep</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

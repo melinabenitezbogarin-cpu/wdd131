@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selectElement) {
         products.forEach((product) => {
             const option = document.createElement("option");
-            option.value = product.id; // Array's id used for value field
-            option.textContent = product.name; // Array's name field used for select option display
+            option.value = product.id; 
+            option.textContent = product.name; 
             selectElement.appendChild(option);
         });
     }
