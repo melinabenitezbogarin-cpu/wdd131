@@ -17,7 +17,7 @@
         padding: 0.5rem 1rem;
     }
 
-    .btn-mentor {
+    .btn-join {
         display: inline-block;
         background-color: var(--text-color);
         color: var(--accent);
@@ -29,7 +29,7 @@
         transition: background-color 0.2s, color 0.2s;
     }
 
-    .btn-mentor:hover {
+    .btn-join:hover {
         background-color: var(--accent-secondary);
         color: var(--text-color);
     }
