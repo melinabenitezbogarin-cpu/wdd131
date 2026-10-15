@@ -1,34 +1,14 @@
-const mentorAreas = [
-    {
-        id: "time-mgmt",
-        name: "Time Management & Prioritization",
-        averagerating: 4.9
-    },
-    {
-        id: "habit-build",
-        name: "Daily Habit Building",
-        averagerating: 4.8
-    },
-    {
-        id: "goal-setting",
-        name: "Goal Setting & Execution",
-        averagerating: 4.7
-    },
-    {
-        id: "focus-distract",
-        name: "Deep Work & Overcoming Distractions",
-        averagerating: 4.9
-    },
-    {
-        id: "work-life",
-        name: "Work-Life Balance",
-        averagerating: 4.6
-    }
-];
+
+const clubAreas = {
+    "lucid-dreams": "Lucid Dreaming & Subconscious Mastery",
+    "deep-rest": "Deep Sleep & Circadian Reset",
+    "mind-clarity": "Morning Clarity & Mental Sharpness",
+    "stress-relief": "Evening Wind-Down & Anxiety Relief",
+    "peak-brain": "Peak Brain Performance & Cognitive Flow"
+};
 
 const hamburger = document.getElementById('hamburger');
 const primaryNav = document.getElementById('menu');
-
 
 if (hamburger && primaryNav) {
     hamburger.addEventListener('click', () => {
@@ -38,13 +18,14 @@ if (hamburger && primaryNav) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
     const selectElement = document.getElementById("option-select");
 
     if (selectElement) {
-        mentorAreas.forEach((area) => {
+        Object.entries(clubAreas).forEach(([value, text]) => {
             const option = document.createElement("option");
-            option.value = area.id;
-            option.textContent = area.name;
+            option.value = value;
+            option.textContent = text;
             selectElement.appendChild(option);
         });
     }

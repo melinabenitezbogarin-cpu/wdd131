@@ -20,22 +20,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    const mentorAreas = {
-        "time-mgmt": "Time Management & Prioritization",
-        "habit-build": "Daily Habit Building",
-        "goal-setting": "Goal Setting & Execution",
-        "focus-distract": "Deep Work & Overcoming Distractions",
-        "work-life": "Work-Life Balance"
+    const clubAreas = {
+        "lucid-dreams": "Lucid Dreaming & Subconscious Mastery",
+        "deep-rest": "Deep Sleep & Circadian Reset",
+        "mind-clarity": "Morning Clarity & Mental Sharpness",
+        "stress-relief": "Evening Wind-Down & Anxiety Relief",
+        "peak-brain": "Peak Brain Performance & Cognitive Flow"
     };
 
+
+    const selectElement = document.getElementById("option-select");
+    if (selectElement) {
+        Object.entries(clubAreas).forEach(([value, text]) => {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = text;
+            selectElement.appendChild(option);
+        });
+    }
+
     const rawOption = getParamValue("option");
-    const formattedOption = mentorAreas[rawOption] || rawOption;
+    const formattedOption = clubAreas[rawOption] || rawOption;
 
     setElementText("display-flname", getParamValue("flname"));
     setElementText("display-email", getParamValue("email"));
     setElementText("display-product", formattedOption);
     setElementText("display-startdate", getParamValue("startDate"));
-    setElementText("display-finishdate", getParamValue("finishDate"));
     setElementText("display-review", getParamValue("writtenReview"));
 
     const currentYearSpan = document.getElementById("currentyear");
